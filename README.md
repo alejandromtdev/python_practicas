@@ -5,42 +5,43 @@ El objetivo es reforzar la base del lenguaje con ejemplos sencillos y bien expli
 
 ---
 
-## 📘 Contenidos del repositorio
+## Contenidos del repositorio
 
-### 🔹 Nivel 1 – Sintaxis básica
+### Nivel 1 – Sintaxis básica
 - Uso del comando `print()`
 - Tipos de datos básicos (`int`, `float`, `str`, `bool`)
 - La función `type()`
 
-### 🔹 Nivel 2 – Variables y operadores
+### Nivel 2 – Variables y operadores
 - Declaración de variables
 - Operadores aritméticos
 - Operadores de asignación
 - Operadores de comparación
 - Operadores lógicos (`and`, `or`, `not`)
 
-### 🔹 Nivel 3 – Strings
+### Nivel 3 – Strings
 - Concatenación de texto
 - Uso de **f-strings**
 - Métodos de cadena (`upper()`, `lower()`, `replace()`, `strip()`, etc.)
 
-### 🔹 Nivel 4 – Condicionales
+### Nivel 4 – Condicionales
 - Estructuras `if`, `elif`, `else`
 - Condicionales anidados
 - Condiciones combinadas con operadores lógicos
 
 ---
 
-## 🚀 Próximos pasos
+## Próximos pasos
 - Practicar bucles (`for`, `while`)
 - Manejo de listas y diccionarios
 - Funciones básicas en Python
 
 ---
 
-## 🧠 Autor
+## Autor
 **Alejandro Morillas**  
-Aprendiendo Python desde cero y documentando mi progreso paso a paso 💪  
+
+Aprendiendo Python desde cero y documentando el progreso con ejercicios prácticos.
 
 ---
 
