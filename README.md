@@ -38,8 +38,7 @@ El objetivo es reforzar la base del lenguaje con ejemplos sencillos y bien expli
 
 ---
 
-## Autor
-**Alejandro Morillas**  
+## Autor: Alejandro Morillas Alejandromtdev**  
 
 Aprendiendo Python desde cero y documentando el progreso con ejercicios prácticos.
 
