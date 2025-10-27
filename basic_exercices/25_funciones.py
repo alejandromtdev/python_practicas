@@ -1,4 +1,3 @@
-
 """Ejercicio 1: Función saludo
 
 Definir una función llamada saludar.
@@ -7,6 +6,6 @@ Mostrar en pantalla un saludo personalizado con print()."""
 
 def saludo():
     nombre = input("Dime cual es tu nombre: ")
-    print 
+    print (f"Un saludo {nombre}, Bienvenido!! ")
 saludo()
 
