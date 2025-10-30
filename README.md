@@ -1,4 +1,4 @@
-Ejercicios de Python
+## Ejercicios de Python
 
 Este repositorio contiene mis **primeras prácticas con Python**, para aprender la sintaxis y la lógica del mismo, orientado hacia el analisis de datos.
 
