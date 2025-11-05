@@ -202,3 +202,72 @@ def analisis_numeros(lista_numeros):
 print(analisis_numeros([10, 20, 30, 40, 50]))
 
 
+"""Ejercicio 7
+
+Crea una función llamada info_texto que reciba una cadena de texto (string)
+y devuelva un diccionario con esta información:
+
+"longitud" → número total de caracteres
+"palabras" → número de palabras
+"mayusculas" → el texto convertido a mayúsculas
+"minusculas" → el texto convertido a minúsculas
+"sin_espacios" → el texto sin espacios. """
+
+def info_texto (texto):
+    resultado = {}
+
+    longitud = len(texto)
+    palabras = len(texto.split())
+    mayusculas = texto.upper()
+    minusculas = texto.lower()
+    sin_espacios = texto.replace(" " , "")
+
+    resultado[longitud] = "longitud"
+    resultado[palabras] = "palabras"
+    resultado[mayusculas] = "mayusculas"
+    resultado[minusculas] = "minusculas"
+    resultado[sin_espacios] = "sin_espacios"
+
+    return resultado 
+
+print(info_texto("Hola mundo desde Python"))
+
+"""Ejercicio 08
+
+Crea una función llamada analizar_lista que reciba una lista de números
+y devuelva un diccionario con la siguiente información:
+
+"positivos" → cuántos números son mayores que 0
+"negativos" → cuántos son menores que 0
+"ceros" → cuántos son exactamente 0
+"suma" → la suma total de todos
+"promedio" → el promedio (media)"""
+
+
+def analizar_lista(lista_numeros):
+    positivos = 0
+    negativos = 0
+    ceros = 0
+
+    for numero in lista_numeros:
+        if numero > 0:
+            positivos += 1
+        elif numero < 0:
+            negativos += 1
+        else:
+            ceros += 1
+
+    suma = sum(lista_numeros)
+    promedio = suma / len(lista_numeros)
+
+    resultado = {
+        "positivos": positivos,
+        "negativos": negativos,
+        "ceros": ceros,
+        "suma": suma,
+        "promedio": promedio
+    }
+
+    return resultado
+
+print(analizar_lista([10, -5, 0, 8, -2]))
