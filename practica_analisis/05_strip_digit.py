@@ -33,41 +33,68 @@ print(filtrar_enteros([" 50 ", "abc", "  300", None, "20euros", "70", "   ", ""]
 Quiero una función:
 
 def contar_strings(lista):
+Que cuente cuántos elementos de la lista son strings, 
+usando isinstance(x, str).
 
+Ejemplo: ["hola", 10, None, "adios", True, "python"]
+Debe devolver:  3"""
 
-Que cuente cuántos elementos de la lista son strings, usando isinstance(x, str).
+def contar_strings(lista):
+    contador = 0   # resultado final
 
-Ejemplo:
+    for elemento in lista:   # elemento va siendo "hola", luego 10, luego None...
+        
+        # comprobación
+        if isinstance(elemento, str):  
+            # si es string sumo
+            contador = contador + 1
 
-["hola", 10, None, "adios", True, "python"]
+    return contador
 
+print (contar_strings(["hola", 10, None, "adios", True, "python"]))
 
-Debe devolver:
-
-3
-
-
-👉 Este ejercicio está centrado SOLO en:
-isinstance()
-
-🧪 EJERCICIO 3 — Practicar .append() correctamente
+"""EJERCICIO 3 — Practicar .append() correctamente
 
 Crea una función:
 
 def filtrar_no_vacios(lista):
-
-
 Que devuelva una lista con solo los strings no vacíos después de .strip().
+Ejemplo:  ["hola", "   ", "", "mundo"]
+Debe devolver:  ["hola", "mundo"]  """
 
-Ejemplo:
+def filtrar_no_vacios(lista):
+    resultado = []              # 1. lista donde guardaremos los buenos
 
-["hola", "   ", "", "mundo"]
+    for elemento in lista:      # 2. recorremos
+        if isinstance(elemento, str):   # 3. trabajar solo con strings
+            texto = elemento.strip()     # 4. limpiamos espacios
+            if texto != "":             # 5. si NO está vacío...
+                resultado.append(texto) # 6. LO AÑADO a la lista final
 
+    return resultado                      # 7. devuelvo la lista limpia
 
-Debe devolver:
+print (filtrar_no_vacios(["hola", "   ", "", "mundo"]))
 
-["hola", "mundo"]
+"""EJERCICIO 4:
 
+Crear una función:
+def filtrar_mayusculas(lista):
 
-👉 Este ejercicio está centrado en solo:
-.strip() → condición → .append()"""
+Que:
+Reciba una lista de strings
+Haga .strip()
+Ignore los vacíos
+Devuelva solo los strings que estén en MAYÚSCULAS
+
+Ejemplo: ["  HOLA  ", "mundo", "  ADIOS", "python", "  ", ""]
+Debe devolver: ["HOLA", "ADIOS"]"""
+
+def filtrar_mayusculas(lista):
+    resultado = []
+    for elemento in lista:
+            texto = elemento.strip()
+            if texto != "" and texto.isupper():
+                resultado.append(texto)
+    return resultado
+print(filtrar_mayusculas(["  HOLA  ", "mundo", "  ADIOS", "python", "  ", ""])) 
+
