@@ -1,4 +1,4 @@
-"""Crea una función llamada limpiar_y_sumar(valores) que:
+"""Ejercicio 3: Crea una función llamada limpiar_y_sumar(valores) que:
 
 Reciba la lista como parámetro → nada de variables globales. 
 Recorra la lista con un for.                                 

@@ -1,4 +1,4 @@
-"""Ejercicio: limpiar enteros de una lista
+"""Ejercicio 4: limpiar enteros de una lista
 
 datos = ["10", "abc", " 20 ", "", None, "30euros", "40", "   ", "N/A", "50"]
 
