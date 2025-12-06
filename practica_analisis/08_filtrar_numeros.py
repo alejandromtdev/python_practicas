@@ -1,4 +1,4 @@
-"""Filtrar y limpiar números enteros simples
+"""Ejercicio 8: Filtrar y limpiar números enteros simples
 
 Dada esta lista: valores = ["100", " 200 ", "", "abc", None, "300euros", "400", "   ", "N/A", "500"]
 
@@ -28,10 +28,3 @@ def extraer_enteros (valores):
     return lista_limpia
     
 print(extraer_enteros(["100", " 200 ", "", "abc", None, "300euros", "400", "   ", "N/A", "500"]))
-
-
-solo_numeros = ""
-
-for caracter in texto:
-    if caracter.isdigit():
-        solo_numeros += caracter
