@@ -6,7 +6,6 @@ Crea una función llamada:
 def extraer_enteros(lista):
 
 La función debe:
-
 Recibir una lista como parámetro.
 Crear una lista nueva donde guardar valores válidos.
 Recorrer la lista con un for.

@@ -8,7 +8,10 @@ Intenta convertir cada valor a número decimal con float(...).
 Si al convertir da error (por ejemplo "abc" o "50euros"), 
 usa try/except para ignorarlo (no debe romper el programa).
 Ve acumulando (sumando) los valores numéricos válidos en una variable.
-la función debe devolver la suma total de todos los números válidos."""
+la función debe devolver la suma total de todos los números válidos.
+
+valores = ["10", "25", "abc", "", " 30 ", None, "40.5", "15.2", "N/A", "50euros"]"""
+
 
 def limpiar_y_sumar(valores):
     total = 0.0
